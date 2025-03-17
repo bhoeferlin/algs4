@@ -32,9 +32,7 @@ public interface DrawListener {
      * @param x the x-coordinate of the mouse
      * @param y the y-coordinate of the mouse
      */
-    default void mousePressed(double x, double y) {
-        // does nothing by default
-    }
+    void mousePressed(double x, double y);
 
     /**
      * Invoked when the mouse has been dragged.
@@ -42,9 +40,7 @@ public interface DrawListener {
      * @param x the x-coordinate of the mouse
      * @param y the y-coordinate of the mouse
      */
-    default void mouseDragged(double x, double y) {
-        // does nothing by default
-    }
+    void mouseDragged(double x, double y);
 
     /**
      * Invoked when the mouse has been released.
@@ -52,9 +48,7 @@ public interface DrawListener {
      * @param x the x-coordinate of the mouse
      * @param y the y-coordinate of the mouse
      */
-    default void mouseReleased(double x, double y) {
-        // does nothing by default
-    }
+    void mouseReleased(double x, double y);
 
     /**
      * Invoked when the mouse has been clicked (pressed and released).
@@ -67,43 +61,33 @@ public interface DrawListener {
      * @param x the x-coordinate of the mouse
      * @param y the y-coordinate of the mouse
      */
-    default void mouseClicked(double x, double y) {
-        // does nothing by default
-    }
+    void mouseClicked(double x, double y);
 
     /**
      * Invoked when a key has been typed.
      *
      * @param c the character typed
      */
-    default void keyTyped(char c) {
-        // does nothing by default
-    }
+    void keyTyped(char c);
 
     /**
      * Invoked when a key has been pressed.
      *
      * @param keycode the key combination pressed
      */
-    default void keyPressed(int keycode) {
-        // does nothing by default
-    }
+    void keyPressed(int keycode);
 
     /**
      * Invoked when a key has been released.
      *
      * @param keycode the key combination released
      */
-    default void keyReleased(int keycode) {
-        // does nothing by default
-    }
-
+    void keyReleased(int keycode);
+    
     /**
      * Gets called at regular time intervals.
      */
-    default void update() {
-        // does nothing by default
-    }
+    void update();
 
 }
 
